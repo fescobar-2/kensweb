@@ -1,0 +1,242 @@
+/*Menu*/
+#fixed{
+	position: fixed;
+	width: 100%;
+	z-index: 1000;
+	height: 90px;
+	margin-bottom: 20px;
+	top: 0;
+}
+.menu{
+	background-color: white;
+	padding-top: 10px;
+	border-bottom: 2px solid #3B8AC4;
+}
+.logo{
+	width:70px;
+}
+.items-menu{
+	margin-top: 20px;
+	list-style: none;
+	text-align: center;
+}
+.items-menu li{
+	display: inline-block;
+	margin-right: 20px;
+}
+.items-menu a{
+	text-decoration: none;
+	color: #0A2D61;
+	font-size: 20px;
+}
+.items-menu a:hover{
+	color: black;
+	text-decoration: none;
+}
+/*Carrousel*/
+.carousel{
+	margin-top: 90px;
+	border-radius: 10px;
+}
+.carousel-inner{
+	height: 550px;
+}
+.carousel-inner .item{
+    height: 550px;
+} 
+.carousel-inner .item img{
+    margin: auto;
+    object-fit: cover;
+}
+.right.carousel-control, .left.carousel-control {
+    opacity: 0;
+    filter:alpha(opacity=0); /* IE support */
+}
+#div-encastre-quienes-somos{
+	height: 90px;
+}
+.quienes-somos{
+	margin: 0 auto;
+	padding-top: 40px;
+}
+/*Titulo*/
+.titulo{
+	text-align: center;
+	font-weight: bold;
+	color: #0A2D61;
+	font-size: 30px;
+	font-family: sans-serif;
+}
+.tituloinv{
+	text-align: center;
+	font-weight: bold;
+	font-size: 30px;
+}
+.sub-titulo{
+	text-align: center;
+	font-weight: bold;
+	color: #0A2D61;
+	font-size: 24px;
+	font-family: 'Nunito', sans-serif;
+}
+/*Menu Gigante*/
+.blog-contenido{
+	margin: 0 auto;
+	background-size: cover;
+	background-position: center;
+	border-radius: 20px;
+	padding: 20px;
+	display:flex;
+	align-items: flex-end;
+	align-content: flex-start;
+	transition: transform .1s;
+	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.blog-contenido:hover{
+	cursor: pointer;
+	transform: scale(1.03);
+}
+#encastre-remeras{
+	height: 90px;
+}
+.remeras{
+	display: flex;
+	align-items: center;
+	align-content: center;
+}
+.bloguno{
+	background-image: url('../img/remera.jpg');
+	height: 650px;
+}
+.blogdos{
+	background-image: url('../img/talleres.jpg');
+	height: 300px;
+}
+.blogtres{
+	background-image: url('../img/seri-en-vivo.png');
+	height: 300px;
+}
+/*Remeras*/
+.tamanho{
+	display: inline;
+}
+.botones-colores{
+	border: 1px solid black;
+}
+.btn-negro{
+	background: black;
+	width: 20px;
+	height: 20px;
+}
+.btn-blanco{
+	background: white;
+	width: 20px;
+	height: 20px;
+}
+/*Talleres*/
+#encastre-talleres{
+	height: 90px;
+}
+.banner{
+	background-image: url('../img/talleres.jpg');
+	height: 600px;
+	background-size: cover;
+	background-position: center;
+}
+/*Serigrafia En Vivo*/
+.encastre-en-vivo{
+	height: 90px;
+}
+.banner2{
+	background-image: url('../img/seri-en-vivo.png');
+	height: 600px;
+	background-size: cover;
+	background-position: center;	
+}
+/*Contactos*/
+.encastre-contacto{
+	height: 90px;
+}
+.contactos{
+	background-color: #0A2D61;
+	display: flex;
+	align-items: center;
+	align-content: center;
+	padding:20px;
+	margin-top:40px;
+
+}
+.lista-contactos h3{
+	padding-bottom: 10px;
+}
+.lista-contactos li{
+	list-style: none;
+	display: block;
+	color: #D8E4F5;
+	padding: 0;
+}
+.lista-contactos li a {
+	color: #D8E4F5;
+}
+.contactos h3{
+	color: white;
+	margin: 0 auto;
+}
+.iconos{
+	font-size: 30px;
+	color: #D8E4F5;
+	margin-right: 10px;
+	margin-top: 10px;
+}
+/*Footer*/
+footer{
+	height: 30px;
+	display: flex;
+	align-content: center;
+	align-items: center;
+	padding:5px;
+}
+footer p{
+	color: #0A2D61;
+	font-size: 14px;
+	margin-bottom: 0px;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: black;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: black;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: black;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+	.blog-contenido{
+		padding: 20px;
+	} 
+	#fixed{
+		height:auto;
+	}
+	.carousel{
+		height: auto;
+	}
+	.contactos{
+	width: auto;
+	background-color: #0A2D61;
+	height: auto;
+	}
+	.contactos p img{
+		width: 60px;
+	}
+}
+
+/*SeriNoticias*/
+.serinoticias{
+	background: url('../img/serinoticias.png');
+	height: 550px;
+}
